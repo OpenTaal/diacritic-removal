@@ -1,0 +1,358 @@
+digraph G {
+layout="twopi"
+ranksep=1.5
+fontsize=32
+label="Remove diacritics"
+labelloc="c"
+node [shape="box" fontsize=24 ]
+"(" [label=<<b>(</b><br/><font point-size="8">left<br/>parenthesis</font>> ]
+")" [label=<<b>)</b><br/><font point-size="8">right<br/>parenthesis</font>> ]
+"0" [label=<<b>0</b><br/><font point-size="8">digit<br/>zero</font>> ]
+"1" [label=<<b>1</b><br/><font point-size="8">digit<br/>one</font>> ]
+"2" [label=<<b>2</b><br/><font point-size="8">digit<br/>two</font>> ]
+"3" [label=<<b>3</b><br/><font point-size="8">digit<br/>three</font>> ]
+"4" [label=<<b>4</b><br/><font point-size="8">digit<br/>four</font>> ]
+"5" [label=<<b>5</b><br/><font point-size="8">digit<br/>five</font>> ]
+"6" [label=<<b>6</b><br/><font point-size="8">digit<br/>six</font>> ]
+"7" [label=<<b>7</b><br/><font point-size="8">digit<br/>seven</font>> ]
+"8" [label=<<b>8</b><br/><font point-size="8">digit<br/>eight</font>> ]
+"9" [label=<<b>9</b><br/><font point-size="8">digit<br/>nine</font>> ]
+"+" [label=<<b>+</b><br/><font point-size="8">plus<br/>sign</font>> ]
+"-" [label=<<b>-</b><br/><font point-size="8">hyphen-minus</font>> ]
+"=" [label=<<b>=</b><br/><font point-size="8">equals<br/>sign</font>> ]
+"a" [label=<<b>a</b><br/><font point-size="8">latin<br/>small<br/>letter a</font>> ]
+"A" [label=<<b>A</b><br/><font point-size="8">latin<br/>capital<br/>letter a</font>> ]
+"c" [label=<<b>c</b><br/><font point-size="8">latin<br/>small<br/>letter c</font>> ]
+"C" [label=<<b>C</b><br/><font point-size="8">latin<br/>capital<br/>letter c</font>> ]
+"e" [label=<<b>e</b><br/><font point-size="8">latin<br/>small<br/>letter e</font>> ]
+"E" [label=<<b>E</b><br/><font point-size="8">latin<br/>capital<br/>letter e</font>> ]
+"h" [label=<<b>h</b><br/><font point-size="8">latin<br/>small<br/>letter h</font>> ]
+"i" [label=<<b>i</b><br/><font point-size="8">latin<br/>small<br/>letter i</font>> ]
+"I" [label=<<b>I</b><br/><font point-size="8">latin<br/>capital<br/>letter i</font>> ]
+"k" [label=<<b>k</b><br/><font point-size="8">latin<br/>small<br/>letter k</font>> ]
+"l" [label=<<b>l</b><br/><font point-size="8">latin<br/>small<br/>letter l</font>> ]
+"m" [label=<<b>m</b><br/><font point-size="8">latin<br/>small<br/>letter m</font>> ]
+"n" [label=<<b>n</b><br/><font point-size="8">latin<br/>small<br/>letter n</font>> ]
+"N" [label=<<b>N</b><br/><font point-size="8">latin<br/>capital<br/>letter n</font>> ]
+"o" [label=<<b>o</b><br/><font point-size="8">latin<br/>small<br/>letter o</font>> ]
+"O" [label=<<b>O</b><br/><font point-size="8">latin<br/>capital<br/>letter o</font>> ]
+"p" [label=<<b>p</b><br/><font point-size="8">latin<br/>small<br/>letter p</font>> ]
+"s" [label=<<b>s</b><br/><font point-size="8">latin<br/>small<br/>letter s</font>> ]
+"t" [label=<<b>t</b><br/><font point-size="8">latin<br/>small<br/>letter t</font>> ]
+"u" [label=<<b>u</b><br/><font point-size="8">latin<br/>small<br/>letter u</font>> ]
+"U" [label=<<b>U</b><br/><font point-size="8">latin<br/>capital<br/>letter u</font>> ]
+"x" [label=<<b>x</b><br/><font point-size="8">latin<br/>small<br/>letter x</font>> ]
+node [style="rounded" ]
+"⁽" [label=<<b>⁽</b><br/><font point-size="8">superscript<br/>left<br/>parenthesis</font>> ]
+"₍" [label=<<b>₍</b><br/><font point-size="8">subscript<br/>left<br/>parenthesis</font>> ]
+"⁾" [label=<<b>⁾</b><br/><font point-size="8">superscript<br/>right<br/>parenthesis</font>> ]
+"₎" [label=<<b>₎</b><br/><font point-size="8">subscript<br/>right<br/>parenthesis</font>> ]
+"⁰" [label=<<b>⁰</b><br/><font point-size="8">superscript<br/>zero</font>> ]
+"₀" [label=<<b>₀</b><br/><font point-size="8">subscript<br/>zero</font>> ]
+"¹" [label=<<b>¹</b><br/><font point-size="8">superscript<br/>one</font>> ]
+"₁" [label=<<b>₁</b><br/><font point-size="8">subscript<br/>one</font>> ]
+"²" [label=<<b>²</b><br/><font point-size="8">superscript<br/>two</font>> ]
+"₂" [label=<<b>₂</b><br/><font point-size="8">subscript<br/>two</font>> ]
+"³" [label=<<b>³</b><br/><font point-size="8">superscript<br/>three</font>> ]
+"₃" [label=<<b>₃</b><br/><font point-size="8">subscript<br/>three</font>> ]
+"⁴" [label=<<b>⁴</b><br/><font point-size="8">superscript<br/>four</font>> ]
+"₄" [label=<<b>₄</b><br/><font point-size="8">subscript<br/>four</font>> ]
+"⁵" [label=<<b>⁵</b><br/><font point-size="8">superscript<br/>five</font>> ]
+"₅" [label=<<b>₅</b><br/><font point-size="8">subscript<br/>five</font>> ]
+"⁶" [label=<<b>⁶</b><br/><font point-size="8">superscript<br/>six</font>> ]
+"₆" [label=<<b>₆</b><br/><font point-size="8">subscript<br/>six</font>> ]
+"⁷" [label=<<b>⁷</b><br/><font point-size="8">superscript<br/>seven</font>> ]
+"₇" [label=<<b>₇</b><br/><font point-size="8">subscript<br/>seven</font>> ]
+"⁸" [label=<<b>⁸</b><br/><font point-size="8">superscript<br/>eight</font>> ]
+"₈" [label=<<b>₈</b><br/><font point-size="8">subscript<br/>eight</font>> ]
+"⁹" [label=<<b>⁹</b><br/><font point-size="8">superscript<br/>nine</font>> ]
+"₉" [label=<<b>₉</b><br/><font point-size="8">subscript<br/>nine</font>> ]
+"⁺" [label=<<b>⁺</b><br/><font point-size="8">superscript<br/>plus<br/>sign</font>> ]
+"₊" [label=<<b>₊</b><br/><font point-size="8">subscript<br/>plus<br/>sign</font>> ]
+"⁻" [label=<<b>⁻</b><br/><font point-size="8">superscript<br/>minus</font>> ]
+"₋" [label=<<b>₋</b><br/><font point-size="8">subscript<br/>minus</font>> ]
+"⁼" [label=<<b>⁼</b><br/><font point-size="8">superscript<br/>equals<br/>sign</font>> ]
+"₌" [label=<<b>₌</b><br/><font point-size="8">subscript<br/>equals<br/>sign</font>> ]
+"ₐ" [label=<<b>ₐ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter a</font>> ]
+"á" [label=<<b>á</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>acute</font>> ]
+"à" [label=<<b>à</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>grave</font>> ]
+"ä" [label=<<b>ä</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>diaeresis</font>> ]
+"â" [label=<<b>â</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>circumflex</font>> ]
+"å" [label=<<b>å</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>ring<br/>above</font>> ]
+"ã" [label=<<b>ã</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>tilde</font>> ]
+"ā" [label=<<b>ā</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>macron</font>> ]
+"Á" [label=<<b>Á</b><br/><font point-size="8">latin<br/>capital<br/>letter a<br/>with<br/>acute</font>> ]
+"À" [label=<<b>À</b><br/><font point-size="8">latin<br/>capital<br/>letter a<br/>with<br/>grave</font>> ]
+"Ä" [label=<<b>Ä</b><br/><font point-size="8">latin<br/>capital<br/>letter a<br/>with<br/>diaeresis</font>> ]
+"Â" [label=<<b>Â</b><br/><font point-size="8">latin<br/>capital<br/>letter a<br/>with<br/>circumflex</font>> ]
+"Å" [label=<<b>Å</b><br/><font point-size="8">latin<br/>capital<br/>letter a<br/>with<br/>ring<br/>above</font>> ]
+"Ã" [label=<<b>Ã</b><br/><font point-size="8">latin<br/>capital<br/>letter a<br/>with<br/>tilde</font>> ]
+"Ā" [label=<<b>Ā</b><br/><font point-size="8">latin<br/>capital<br/>letter a<br/>with<br/>macron</font>> ]
+"ç" [label=<<b>ç</b><br/><font point-size="8">latin<br/>small<br/>letter c<br/>with<br/>cedilla</font>> ]
+"Ç" [label=<<b>Ç</b><br/><font point-size="8">latin<br/>capital<br/>letter c<br/>with<br/>cedilla</font>> ]
+"ₑ" [label=<<b>ₑ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter e</font>> ]
+"é" [label=<<b>é</b><br/><font point-size="8">latin<br/>small<br/>letter e<br/>with<br/>acute</font>> ]
+"è" [label=<<b>è</b><br/><font point-size="8">latin<br/>small<br/>letter e<br/>with<br/>grave</font>> ]
+"ë" [label=<<b>ë</b><br/><font point-size="8">latin<br/>small<br/>letter e<br/>with<br/>diaeresis</font>> ]
+"ê" [label=<<b>ê</b><br/><font point-size="8">latin<br/>small<br/>letter e<br/>with<br/>circumflex</font>> ]
+"ē" [label=<<b>ē</b><br/><font point-size="8">latin<br/>small<br/>letter e<br/>with<br/>macron</font>> ]
+"É" [label=<<b>É</b><br/><font point-size="8">latin<br/>capital<br/>letter e<br/>with<br/>acute</font>> ]
+"È" [label=<<b>È</b><br/><font point-size="8">latin<br/>capital<br/>letter e<br/>with<br/>grave</font>> ]
+"Ë" [label=<<b>Ë</b><br/><font point-size="8">latin<br/>capital<br/>letter e<br/>with<br/>diaeresis</font>> ]
+"Ê" [label=<<b>Ê</b><br/><font point-size="8">latin<br/>capital<br/>letter e<br/>with<br/>circumflex</font>> ]
+"Ē" [label=<<b>Ē</b><br/><font point-size="8">latin<br/>capital<br/>letter e<br/>with<br/>macron</font>> ]
+"ₕ" [label=<<b>ₕ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter h</font>> ]
+"ⁱ" [label=<<b>ⁱ</b><br/><font point-size="8">superscript<br/>latin<br/>small<br/>letter i</font>> ]
+"í" [label=<<b>í</b><br/><font point-size="8">latin<br/>small<br/>letter i<br/>with<br/>acute</font>> ]
+"ì" [label=<<b>ì</b><br/><font point-size="8">latin<br/>small<br/>letter i<br/>with<br/>grave</font>> ]
+"ï" [label=<<b>ï</b><br/><font point-size="8">latin<br/>small<br/>letter i<br/>with<br/>diaeresis</font>> ]
+"î" [label=<<b>î</b><br/><font point-size="8">latin<br/>small<br/>letter i<br/>with<br/>circumflex</font>> ]
+"ī" [label=<<b>ī</b><br/><font point-size="8">latin<br/>small<br/>letter i<br/>with<br/>macron</font>> ]
+"Í" [label=<<b>Í</b><br/><font point-size="8">latin<br/>capital<br/>letter i<br/>with<br/>acute</font>> ]
+"Ì" [label=<<b>Ì</b><br/><font point-size="8">latin<br/>capital<br/>letter i<br/>with<br/>grave</font>> ]
+"Ï" [label=<<b>Ï</b><br/><font point-size="8">latin<br/>capital<br/>letter i<br/>with<br/>diaeresis</font>> ]
+"Î" [label=<<b>Î</b><br/><font point-size="8">latin<br/>capital<br/>letter i<br/>with<br/>circumflex</font>> ]
+"Ī" [label=<<b>Ī</b><br/><font point-size="8">latin<br/>capital<br/>letter i<br/>with<br/>macron</font>> ]
+"ₖ" [label=<<b>ₖ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter k</font>> ]
+"ₗ" [label=<<b>ₗ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter l</font>> ]
+"ₘ" [label=<<b>ₘ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter m</font>> ]
+"ⁿ" [label=<<b>ⁿ</b><br/><font point-size="8">superscript<br/>latin<br/>small<br/>letter n</font>> ]
+"ₙ" [label=<<b>ₙ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter n</font>> ]
+"ñ" [label=<<b>ñ</b><br/><font point-size="8">latin<br/>small<br/>letter n<br/>with<br/>tilde</font>> ]
+"Ñ" [label=<<b>Ñ</b><br/><font point-size="8">latin<br/>capital<br/>letter n<br/>with<br/>tilde</font>> ]
+"ₒ" [label=<<b>ₒ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter o</font>> ]
+"ó" [label=<<b>ó</b><br/><font point-size="8">latin<br/>small<br/>letter o<br/>with<br/>acute</font>> ]
+"ò" [label=<<b>ò</b><br/><font point-size="8">latin<br/>small<br/>letter o<br/>with<br/>grave</font>> ]
+"ö" [label=<<b>ö</b><br/><font point-size="8">latin<br/>small<br/>letter o<br/>with<br/>diaeresis</font>> ]
+"ô" [label=<<b>ô</b><br/><font point-size="8">latin<br/>small<br/>letter o<br/>with<br/>circumflex</font>> ]
+"ø" [label=<<b>ø</b><br/><font point-size="8">latin<br/>small<br/>letter o<br/>with<br/>stroke</font>> ]
+"ō" [label=<<b>ō</b><br/><font point-size="8">latin<br/>small<br/>letter o<br/>with<br/>macron</font>> ]
+"Ó" [label=<<b>Ó</b><br/><font point-size="8">latin<br/>capital<br/>letter o<br/>with<br/>acute</font>> ]
+"Ò" [label=<<b>Ò</b><br/><font point-size="8">latin<br/>capital<br/>letter o<br/>with<br/>grave</font>> ]
+"Ö" [label=<<b>Ö</b><br/><font point-size="8">latin<br/>capital<br/>letter o<br/>with<br/>diaeresis</font>> ]
+"Ô" [label=<<b>Ô</b><br/><font point-size="8">latin<br/>capital<br/>letter o<br/>with<br/>circumflex</font>> ]
+"Ø" [label=<<b>Ø</b><br/><font point-size="8">latin<br/>capital<br/>letter o<br/>with<br/>stroke</font>> ]
+"Ō" [label=<<b>Ō</b><br/><font point-size="8">latin<br/>capital<br/>letter o<br/>with<br/>macron</font>> ]
+"ₚ" [label=<<b>ₚ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter p</font>> ]
+"ₛ" [label=<<b>ₛ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter s</font>> ]
+"ₜ" [label=<<b>ₜ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter t</font>> ]
+"ú" [label=<<b>ú</b><br/><font point-size="8">latin<br/>small<br/>letter u<br/>with<br/>acute</font>> ]
+"ù" [label=<<b>ù</b><br/><font point-size="8">latin<br/>small<br/>letter u<br/>with<br/>grave</font>> ]
+"ü" [label=<<b>ü</b><br/><font point-size="8">latin<br/>small<br/>letter u<br/>with<br/>diaeresis</font>> ]
+"û" [label=<<b>û</b><br/><font point-size="8">latin<br/>small<br/>letter u<br/>with<br/>circumflex</font>> ]
+"ū" [label=<<b>ū</b><br/><font point-size="8">latin<br/>small<br/>letter u<br/>with<br/>macron</font>> ]
+"Ú" [label=<<b>Ú</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>acute</font>> ]
+"Ù" [label=<<b>Ù</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>grave</font>> ]
+"Ü" [label=<<b>Ü</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>diaeresis</font>> ]
+"Û" [label=<<b>Û</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>circumflex</font>> ]
+"Ū" [label=<<b>Ū</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>macron</font>> ]
+"ₓ" [label=<<b>ₓ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter x</font>> ]
+"⁽" -> "("
+
+"₍" -> "("
+
+"⁾" -> ")"
+
+"₎" -> ")"
+
+"⁰" -> "0"
+
+"₀" -> "0"
+
+"¹" -> "1"
+
+"₁" -> "1"
+
+"²" -> "2"
+
+"₂" -> "2"
+
+"³" -> "3"
+
+"₃" -> "3"
+
+"⁴" -> "4"
+
+"₄" -> "4"
+
+"⁵" -> "5"
+
+"₅" -> "5"
+
+"⁶" -> "6"
+
+"₆" -> "6"
+
+"⁷" -> "7"
+
+"₇" -> "7"
+
+"⁸" -> "8"
+
+"₈" -> "8"
+
+"⁹" -> "9"
+
+"₉" -> "9"
+
+"⁺" -> "+"
+
+"₊" -> "+"
+
+"⁻" -> "-"
+
+"₋" -> "-"
+
+"⁼" -> "="
+
+"₌" -> "="
+
+"ₐ" -> "a"
+
+"á" -> "a"
+
+"à" -> "a"
+
+"ä" -> "a"
+
+"â" -> "a"
+
+"å" -> "a"
+
+"ã" -> "a"
+
+"ā" -> "a"
+
+"Á" -> "A"
+
+"À" -> "A"
+
+"Ä" -> "A"
+
+"Â" -> "A"
+
+"Å" -> "A"
+
+"Ã" -> "A"
+
+"Ā" -> "A"
+
+"ç" -> "c"
+
+"Ç" -> "C"
+
+"ₑ" -> "e"
+
+"é" -> "e"
+
+"è" -> "e"
+
+"ë" -> "e"
+
+"ê" -> "e"
+
+"ē" -> "e"
+
+"É" -> "E"
+
+"È" -> "E"
+
+"Ë" -> "E"
+
+"Ê" -> "E"
+
+"Ē" -> "E"
+
+"ₕ" -> "h"
+
+"ⁱ" -> "i"
+
+"í" -> "i"
+
+"ì" -> "i"
+
+"ï" -> "i"
+
+"î" -> "i"
+
+"ī" -> "i"
+
+"Í" -> "I"
+
+"Ì" -> "I"
+
+"Ï" -> "I"
+
+"Î" -> "I"
+
+"Ī" -> "I"
+
+"ₖ" -> "k"
+
+"ₗ" -> "l"
+
+"ₘ" -> "m"
+
+"ⁿ" -> "n"
+
+"ₙ" -> "n"
+
+"ñ" -> "n"
+
+"Ñ" -> "N"
+
+"ₒ" -> "o"
+
+"ó" -> "o"
+
+"ò" -> "o"
+
+"ö" -> "o"
+
+"ô" -> "o"
+
+"ø" -> "o"
+
+"ō" -> "o"
+
+"Ó" -> "O"
+
+"Ò" -> "O"
+
+"Ö" -> "O"
+
+"Ô" -> "O"
+
+"Ø" -> "O"
+
+"Ō" -> "O"
+
+"ₚ" -> "p"
+
+"ₛ" -> "s"
+
+"ₜ" -> "t"
+
+"ú" -> "u"
+
+"ù" -> "u"
+
+"ü" -> "u"
+
+"û" -> "u"
+
+"ū" -> "u"
+
+"Ú" -> "U"
+
+"Ù" -> "U"
+
+"Ü" -> "U"
+
+"Û" -> "U"
+
+"Ū" -> "U"
+
+"ₓ" -> "x"
+
+}
