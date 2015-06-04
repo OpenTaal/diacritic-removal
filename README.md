@@ -25,5 +25,7 @@ In the examples above, 16m² is a type of sailing boat and not sixteen square
 meters, which is properly written as 16 m² with a space between the number and
 the unit.
 
-The definitions are found in [diacritic-removal.tsv](https://github.com/OpenTaal/diacritic-removal/blob/master/diacritic-removal.tsv). Documentation of the mapping is found in [diacritic-removal.png](https://github.com/OpenTaal/diacritic-removal/blob/master/diacritic-removal.png). Regular expressions, for usage in for example sed, are found
-in [diacritic-removal.sed](https://github.com/OpenTaal/diacritic-removal/blob/master/diacritic-removal.sed).
+The definitions are found in [diacritic-removal.tsv](diacritic-removal.tsv). Documentation of the mapping is found in [diacritic-removal.png](diacritic-removal.png). Regular expressions, for usage in for example sed, are found
+in [diacritic-removal.sed](diacritic-removal.sed).
+
+![Removal of diacritics](diacritic-removal.png?raw=true "Removal of diacritics")
