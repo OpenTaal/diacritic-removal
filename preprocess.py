@@ -48,6 +48,8 @@ node [shape="box" fontsize=24 ]
 ''')
     for node in src_nodes:
         gv_file.write('"{}" [label=<<b>{}</b><br/><font point-size="8">{}</font>> ]\n'.format(node, node, unicodedata.name(node).replace('LETTER ', 'LETTER_').replace(' ', '<br/>').replace('LETTER_', 'LETTER ').lower()))
+    for edge in edges:
+        gv_file.write('{}\n'.format(edge))
     for regex in regexes:
         sed_file.write('{}\n'.format(regex))
 
