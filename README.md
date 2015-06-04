@@ -16,5 +16,6 @@ or ². Examples for when this relates to the Dutch language are:
 * 16m² → 16m2
 * HNO₃-oplossing → HNO3-oplossing
 
-Here 16m² is a type of sailing boat and not sixteen square meters which is
-properly written as 16 m² with a space between the number and the unit.
+In the examples above, 16m² is a type of sailing boat and not sixteen square
+meters, which is properly written as 16 m² with a space between the number and
+the unit.
