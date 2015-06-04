@@ -2,24 +2,9 @@ digraph G {
 layout="twopi"
 ranksep=1.5
 fontsize=32
-label="Remove diacritics"
+label="Removal of diacritics"
 labelloc="c"
 node [shape="box" fontsize=24 ]
-"(" [label=<<b>(</b><br/><font point-size="8">left<br/>parenthesis</font>> ]
-")" [label=<<b>)</b><br/><font point-size="8">right<br/>parenthesis</font>> ]
-"0" [label=<<b>0</b><br/><font point-size="8">digit<br/>zero</font>> ]
-"1" [label=<<b>1</b><br/><font point-size="8">digit<br/>one</font>> ]
-"2" [label=<<b>2</b><br/><font point-size="8">digit<br/>two</font>> ]
-"3" [label=<<b>3</b><br/><font point-size="8">digit<br/>three</font>> ]
-"4" [label=<<b>4</b><br/><font point-size="8">digit<br/>four</font>> ]
-"5" [label=<<b>5</b><br/><font point-size="8">digit<br/>five</font>> ]
-"6" [label=<<b>6</b><br/><font point-size="8">digit<br/>six</font>> ]
-"7" [label=<<b>7</b><br/><font point-size="8">digit<br/>seven</font>> ]
-"8" [label=<<b>8</b><br/><font point-size="8">digit<br/>eight</font>> ]
-"9" [label=<<b>9</b><br/><font point-size="8">digit<br/>nine</font>> ]
-"+" [label=<<b>+</b><br/><font point-size="8">plus<br/>sign</font>> ]
-"-" [label=<<b>-</b><br/><font point-size="8">hyphen-minus</font>> ]
-"=" [label=<<b>=</b><br/><font point-size="8">equals<br/>sign</font>> ]
 "a" [label=<<b>a</b><br/><font point-size="8">latin<br/>small<br/>letter a</font>> ]
 "A" [label=<<b>A</b><br/><font point-size="8">latin<br/>capital<br/>letter a</font>> ]
 "c" [label=<<b>c</b><br/><font point-size="8">latin<br/>small<br/>letter c</font>> ]
@@ -42,37 +27,22 @@ node [shape="box" fontsize=24 ]
 "u" [label=<<b>u</b><br/><font point-size="8">latin<br/>small<br/>letter u</font>> ]
 "U" [label=<<b>U</b><br/><font point-size="8">latin<br/>capital<br/>letter u</font>> ]
 "x" [label=<<b>x</b><br/><font point-size="8">latin<br/>small<br/>letter x</font>> ]
+"0" [label=<<b>0</b><br/><font point-size="8">digit<br/>zero</font>> ]
+"1" [label=<<b>1</b><br/><font point-size="8">digit<br/>one</font>> ]
+"2" [label=<<b>2</b><br/><font point-size="8">digit<br/>two</font>> ]
+"3" [label=<<b>3</b><br/><font point-size="8">digit<br/>three</font>> ]
+"4" [label=<<b>4</b><br/><font point-size="8">digit<br/>four</font>> ]
+"5" [label=<<b>5</b><br/><font point-size="8">digit<br/>five</font>> ]
+"6" [label=<<b>6</b><br/><font point-size="8">digit<br/>six</font>> ]
+"7" [label=<<b>7</b><br/><font point-size="8">digit<br/>seven</font>> ]
+"8" [label=<<b>8</b><br/><font point-size="8">digit<br/>eight</font>> ]
+"9" [label=<<b>9</b><br/><font point-size="8">digit<br/>nine</font>> ]
+"+" [label=<<b>+</b><br/><font point-size="8">plus<br/>sign</font>> ]
+"-" [label=<<b>-</b><br/><font point-size="8">hyphen-minus</font>> ]
+"=" [label=<<b>=</b><br/><font point-size="8">equals<br/>sign</font>> ]
+"(" [label=<<b>(</b><br/><font point-size="8">left<br/>parenthesis</font>> ]
+")" [label=<<b>)</b><br/><font point-size="8">right<br/>parenthesis</font>> ]
 node [style="rounded" ]
-"⁽" [label=<<b>⁽</b><br/><font point-size="8">superscript<br/>left<br/>parenthesis</font>> ]
-"₍" [label=<<b>₍</b><br/><font point-size="8">subscript<br/>left<br/>parenthesis</font>> ]
-"⁾" [label=<<b>⁾</b><br/><font point-size="8">superscript<br/>right<br/>parenthesis</font>> ]
-"₎" [label=<<b>₎</b><br/><font point-size="8">subscript<br/>right<br/>parenthesis</font>> ]
-"⁰" [label=<<b>⁰</b><br/><font point-size="8">superscript<br/>zero</font>> ]
-"₀" [label=<<b>₀</b><br/><font point-size="8">subscript<br/>zero</font>> ]
-"¹" [label=<<b>¹</b><br/><font point-size="8">superscript<br/>one</font>> ]
-"₁" [label=<<b>₁</b><br/><font point-size="8">subscript<br/>one</font>> ]
-"²" [label=<<b>²</b><br/><font point-size="8">superscript<br/>two</font>> ]
-"₂" [label=<<b>₂</b><br/><font point-size="8">subscript<br/>two</font>> ]
-"³" [label=<<b>³</b><br/><font point-size="8">superscript<br/>three</font>> ]
-"₃" [label=<<b>₃</b><br/><font point-size="8">subscript<br/>three</font>> ]
-"⁴" [label=<<b>⁴</b><br/><font point-size="8">superscript<br/>four</font>> ]
-"₄" [label=<<b>₄</b><br/><font point-size="8">subscript<br/>four</font>> ]
-"⁵" [label=<<b>⁵</b><br/><font point-size="8">superscript<br/>five</font>> ]
-"₅" [label=<<b>₅</b><br/><font point-size="8">subscript<br/>five</font>> ]
-"⁶" [label=<<b>⁶</b><br/><font point-size="8">superscript<br/>six</font>> ]
-"₆" [label=<<b>₆</b><br/><font point-size="8">subscript<br/>six</font>> ]
-"⁷" [label=<<b>⁷</b><br/><font point-size="8">superscript<br/>seven</font>> ]
-"₇" [label=<<b>₇</b><br/><font point-size="8">subscript<br/>seven</font>> ]
-"⁸" [label=<<b>⁸</b><br/><font point-size="8">superscript<br/>eight</font>> ]
-"₈" [label=<<b>₈</b><br/><font point-size="8">subscript<br/>eight</font>> ]
-"⁹" [label=<<b>⁹</b><br/><font point-size="8">superscript<br/>nine</font>> ]
-"₉" [label=<<b>₉</b><br/><font point-size="8">subscript<br/>nine</font>> ]
-"⁺" [label=<<b>⁺</b><br/><font point-size="8">superscript<br/>plus<br/>sign</font>> ]
-"₊" [label=<<b>₊</b><br/><font point-size="8">subscript<br/>plus<br/>sign</font>> ]
-"⁻" [label=<<b>⁻</b><br/><font point-size="8">superscript<br/>minus</font>> ]
-"₋" [label=<<b>₋</b><br/><font point-size="8">subscript<br/>minus</font>> ]
-"⁼" [label=<<b>⁼</b><br/><font point-size="8">superscript<br/>equals<br/>sign</font>> ]
-"₌" [label=<<b>₌</b><br/><font point-size="8">subscript<br/>equals<br/>sign</font>> ]
 "ₐ" [label=<<b>ₐ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter a</font>> ]
 "á" [label=<<b>á</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>acute</font>> ]
 "à" [label=<<b>à</b><br/><font point-size="8">latin<br/>small<br/>letter a<br/>with<br/>grave</font>> ]
@@ -147,212 +117,34 @@ node [style="rounded" ]
 "Û" [label=<<b>Û</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>circumflex</font>> ]
 "Ū" [label=<<b>Ū</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>macron</font>> ]
 "ₓ" [label=<<b>ₓ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter x</font>> ]
-"⁽" -> "("
-
-"₍" -> "("
-
-"⁾" -> ")"
-
-"₎" -> ")"
-
-"⁰" -> "0"
-
-"₀" -> "0"
-
-"¹" -> "1"
-
-"₁" -> "1"
-
-"²" -> "2"
-
-"₂" -> "2"
-
-"³" -> "3"
-
-"₃" -> "3"
-
-"⁴" -> "4"
-
-"₄" -> "4"
-
-"⁵" -> "5"
-
-"₅" -> "5"
-
-"⁶" -> "6"
-
-"₆" -> "6"
-
-"⁷" -> "7"
-
-"₇" -> "7"
-
-"⁸" -> "8"
-
-"₈" -> "8"
-
-"⁹" -> "9"
-
-"₉" -> "9"
-
-"⁺" -> "+"
-
-"₊" -> "+"
-
-"⁻" -> "-"
-
-"₋" -> "-"
-
-"⁼" -> "="
-
-"₌" -> "="
-
-"ₐ" -> "a"
-
-"á" -> "a"
-
-"à" -> "a"
-
-"ä" -> "a"
-
-"â" -> "a"
-
-"å" -> "a"
-
-"ã" -> "a"
-
-"ā" -> "a"
-
-"Á" -> "A"
-
-"À" -> "A"
-
-"Ä" -> "A"
-
-"Â" -> "A"
-
-"Å" -> "A"
-
-"Ã" -> "A"
-
-"Ā" -> "A"
-
-"ç" -> "c"
-
-"Ç" -> "C"
-
-"ₑ" -> "e"
-
-"é" -> "e"
-
-"è" -> "e"
-
-"ë" -> "e"
-
-"ê" -> "e"
-
-"ē" -> "e"
-
-"É" -> "E"
-
-"È" -> "E"
-
-"Ë" -> "E"
-
-"Ê" -> "E"
-
-"Ē" -> "E"
-
-"ₕ" -> "h"
-
-"ⁱ" -> "i"
-
-"í" -> "i"
-
-"ì" -> "i"
-
-"ï" -> "i"
-
-"î" -> "i"
-
-"ī" -> "i"
-
-"Í" -> "I"
-
-"Ì" -> "I"
-
-"Ï" -> "I"
-
-"Î" -> "I"
-
-"Ī" -> "I"
-
-"ₖ" -> "k"
-
-"ₗ" -> "l"
-
-"ₘ" -> "m"
-
-"ⁿ" -> "n"
-
-"ₙ" -> "n"
-
-"ñ" -> "n"
-
-"Ñ" -> "N"
-
-"ₒ" -> "o"
-
-"ó" -> "o"
-
-"ò" -> "o"
-
-"ö" -> "o"
-
-"ô" -> "o"
-
-"ø" -> "o"
-
-"ō" -> "o"
-
-"Ó" -> "O"
-
-"Ò" -> "O"
-
-"Ö" -> "O"
-
-"Ô" -> "O"
-
-"Ø" -> "O"
-
-"Ō" -> "O"
-
-"ₚ" -> "p"
-
-"ₛ" -> "s"
-
-"ₜ" -> "t"
-
-"ú" -> "u"
-
-"ù" -> "u"
-
-"ü" -> "u"
-
-"û" -> "u"
-
-"ū" -> "u"
-
-"Ú" -> "U"
-
-"Ù" -> "U"
-
-"Ü" -> "U"
-
-"Û" -> "U"
-
-"Ū" -> "U"
-
-"ₓ" -> "x"
-
+"⁰" [label=<<b>⁰</b><br/><font point-size="8">superscript<br/>zero</font>> ]
+"₀" [label=<<b>₀</b><br/><font point-size="8">subscript<br/>zero</font>> ]
+"¹" [label=<<b>¹</b><br/><font point-size="8">superscript<br/>one</font>> ]
+"₁" [label=<<b>₁</b><br/><font point-size="8">subscript<br/>one</font>> ]
+"²" [label=<<b>²</b><br/><font point-size="8">superscript<br/>two</font>> ]
+"₂" [label=<<b>₂</b><br/><font point-size="8">subscript<br/>two</font>> ]
+"³" [label=<<b>³</b><br/><font point-size="8">superscript<br/>three</font>> ]
+"₃" [label=<<b>₃</b><br/><font point-size="8">subscript<br/>three</font>> ]
+"⁴" [label=<<b>⁴</b><br/><font point-size="8">superscript<br/>four</font>> ]
+"₄" [label=<<b>₄</b><br/><font point-size="8">subscript<br/>four</font>> ]
+"⁵" [label=<<b>⁵</b><br/><font point-size="8">superscript<br/>five</font>> ]
+"₅" [label=<<b>₅</b><br/><font point-size="8">subscript<br/>five</font>> ]
+"⁶" [label=<<b>⁶</b><br/><font point-size="8">superscript<br/>six</font>> ]
+"₆" [label=<<b>₆</b><br/><font point-size="8">subscript<br/>six</font>> ]
+"⁷" [label=<<b>⁷</b><br/><font point-size="8">superscript<br/>seven</font>> ]
+"₇" [label=<<b>₇</b><br/><font point-size="8">subscript<br/>seven</font>> ]
+"⁸" [label=<<b>⁸</b><br/><font point-size="8">superscript<br/>eight</font>> ]
+"₈" [label=<<b>₈</b><br/><font point-size="8">subscript<br/>eight</font>> ]
+"⁹" [label=<<b>⁹</b><br/><font point-size="8">superscript<br/>nine</font>> ]
+"₉" [label=<<b>₉</b><br/><font point-size="8">subscript<br/>nine</font>> ]
+"⁺" [label=<<b>⁺</b><br/><font point-size="8">superscript<br/>plus<br/>sign</font>> ]
+"₊" [label=<<b>₊</b><br/><font point-size="8">subscript<br/>plus<br/>sign</font>> ]
+"⁻" [label=<<b>⁻</b><br/><font point-size="8">superscript<br/>minus</font>> ]
+"₋" [label=<<b>₋</b><br/><font point-size="8">subscript<br/>minus</font>> ]
+"⁼" [label=<<b>⁼</b><br/><font point-size="8">superscript<br/>equals<br/>sign</font>> ]
+"₌" [label=<<b>₌</b><br/><font point-size="8">subscript<br/>equals<br/>sign</font>> ]
+"⁽" [label=<<b>⁽</b><br/><font point-size="8">superscript<br/>left<br/>parenthesis</font>> ]
+"₍" [label=<<b>₍</b><br/><font point-size="8">subscript<br/>left<br/>parenthesis</font>> ]
+"⁾" [label=<<b>⁾</b><br/><font point-size="8">superscript<br/>right<br/>parenthesis</font>> ]
+"₎" [label=<<b>₎</b><br/><font point-size="8">subscript<br/>right<br/>parenthesis</font>> ]
 }

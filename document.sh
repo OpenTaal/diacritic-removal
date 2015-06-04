@@ -1,2 +1,2 @@
 ./preprocess.py
-dot -Tpng diacritic-remove.gv -odiacritic-remove.png
+dot -Tpng diacritic-removal.gv -odiacritic-removal.png
