@@ -1,0 +1,3 @@
+Optimise generation of SED file by grouping on destination character. At the same time using that new code for generation of GV file.
+
+Generate list and dictionary for Python in two different Python files what contain no code, only declaration.
