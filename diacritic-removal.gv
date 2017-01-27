@@ -27,6 +27,8 @@ node [shape="box" fontsize=24 ]
 "u" [label=<<b>u</b><br/><font point-size="8">latin<br/>small<br/>letter u</font>> ]
 "U" [label=<<b>U</b><br/><font point-size="8">latin<br/>capital<br/>letter u</font>> ]
 "x" [label=<<b>x</b><br/><font point-size="8">latin<br/>small<br/>letter x</font>> ]
+"y" [label=<<b>y</b><br/><font point-size="8">latin<br/>small<br/>letter y</font>> ]
+"Y" [label=<<b>Y</b><br/><font point-size="8">latin<br/>capital<br/>letter y</font>> ]
 "0" [label=<<b>0</b><br/><font point-size="8">digit<br/>zero</font>> ]
 "1" [label=<<b>1</b><br/><font point-size="8">digit<br/>one</font>> ]
 "2" [label=<<b>2</b><br/><font point-size="8">digit<br/>two</font>> ]
@@ -117,6 +119,8 @@ node [style="rounded" ]
 "Û" [label=<<b>Û</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>circumflex</font>> ]
 "Ū" [label=<<b>Ū</b><br/><font point-size="8">latin<br/>capital<br/>letter u<br/>with<br/>macron</font>> ]
 "ₓ" [label=<<b>ₓ</b><br/><font point-size="8">latin<br/>subscript<br/>small<br/>letter x</font>> ]
+"ÿ" [label=<<b>ÿ</b><br/><font point-size="8">latin<br/>small<br/>letter y<br/>with<br/>diaeresis</font>> ]
+"Ÿ" [label=<<b>Ÿ</b><br/><font point-size="8">latin<br/>capital<br/>letter y<br/>with<br/>diaeresis</font>> ]
 "⁰" [label=<<b>⁰</b><br/><font point-size="8">superscript<br/>zero</font>> ]
 "₀" [label=<<b>₀</b><br/><font point-size="8">subscript<br/>zero</font>> ]
 "¹" [label=<<b>¹</b><br/><font point-size="8">superscript<br/>one</font>> ]
@@ -221,6 +225,8 @@ node [style="rounded" ]
 "Û" -> "U"
 "Ū" -> "U"
 "ₓ" -> "x"
+"ÿ" -> "y"
+"Ÿ" -> "Y"
 "⁰" -> "0"
 "₀" -> "0"
 "¹" -> "1"
